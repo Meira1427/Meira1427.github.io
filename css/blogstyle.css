@@ -100,7 +100,6 @@ div#navbar ul, div#links ul {
 
 div#navbar ul li, div#links ul li {
 	text-align: center;
-	/* width: 100%; */
 	margin: 0 0 3% 0;
 	padding: 5%;
 }
