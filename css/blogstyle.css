@@ -13,7 +13,6 @@ body {
 p {
 	font-size: 1.2em;
 	text-align: justify;
-	margin: 0 18% 1% 18%;
 }
 
 /* styling the links */
@@ -95,7 +94,6 @@ div#links {
 div#navbar ul, div#links ul {
 	list-style-type: none;
 	padding: 0;
-	margin-top: 13%;
 }
 
 div#navbar ul li, div#links ul li {
@@ -130,7 +128,7 @@ div.nowrap {
 }
 
 div#main {
-	margin-top: 4%;
+
 }
 
 div#footer {
@@ -139,6 +137,23 @@ div#footer {
 	color: #3d3f4c;
 	padding: 1%;
 	margin: 0 20% 0 20%;
+}
+
+div#left {
+	width: 20%;
+	left: 0;
+	margin-top: 2%;
+}
+
+div#right {
+	width: 20%;
+	right: 0;
+	margin-top: 2%;
+}
+
+div#middle {
+	width: 60%;
+	margin: 4% 20% 0 20%;
 }
 
 /*button to popup */
