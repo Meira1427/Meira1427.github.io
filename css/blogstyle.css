@@ -83,13 +83,13 @@ div#space {
 div#navbar {
 	position: fixed;
 	display: inline-block;
-	right: 1%;
+	right: .5%;
 }
 
 div#links {
 	position: fixed;
 	display: inline-block;
-	left: 1%;
+	left: .5%;
 }
 
 div#navbar ul, div#links ul {
@@ -102,6 +102,7 @@ div#navbar ul li, div#links ul li {
 	text-align: center;
 	margin: 0 0 3% 0;
 	padding: 5%;
+	width: 100%;
 }
 
 li.colorButtons {
