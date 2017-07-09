@@ -89,7 +89,7 @@ div#navbar {
 div#links {
 	position: fixed;
 	display: inline-block;
-	left: .5%;
+	left: 1%;
 }
 
 div#navbar ul, div#links ul {
