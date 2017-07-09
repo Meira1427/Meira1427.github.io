@@ -83,7 +83,7 @@ div#space {
 div#navbar {
 	position: fixed;
 	display: inline-block;
-	right: .5%;
+	right: 1%;
 }
 
 div#links {
@@ -101,7 +101,7 @@ div#navbar ul, div#links ul {
 div#navbar ul li, div#links ul li {
 	text-align: center;
 	margin: 0 0 3% 0;
-	padding: 5%;
+	padding: 3%;
 	width: 100%;
 }
 
