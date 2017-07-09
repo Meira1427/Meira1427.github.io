@@ -1,0 +1,152 @@
+/* body and paragraphs */
+
+body {
+	width: 100%;
+	font-size: 1em;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	color: black;
+	background-color: #9DA1B3;
+	left: 0;
+	top: 0;
+}
+
+p {
+	font-size: 1.2em;
+	text-align: justify;
+	margin: 0 18% 1% 18%;
+}
+
+/* styling the links */
+
+a {
+	margin: 1em;
+	padding: 1em;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 1.2em;
+	color: #112288;
+}
+
+a:visited {
+	color: #733f7f;
+}
+
+a:hover {
+	font-size: 1.4em;
+	color: #557755;
+}
+
+/* styling headers */
+
+h1 {
+	font-family:"Trebuchet MS", Helvetica, sans-serif;
+	font-size: 2.5em;
+}
+
+h2 {
+	font-family: Georgia, Times, serif;
+	font-size: 1.6em;
+}
+
+h3 {
+	font-family: Georgia, Times, serif;
+	font-size: 1.3em;
+}
+
+h1, h2, h3 {
+	text-align: center;
+}
+
+/* for arranging divs, navbars and links */
+
+div#header {
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: #001266;
+}
+
+#header h1, #header h2, #header h3 {
+	color: #FFFFEE;
+	line-height: .5em;
+}
+
+div#space {
+	visibility: hidden;
+	width: 100%;
+}
+
+#space h1, #space h2, #space h3 {
+	line-height: .5em;
+}
+
+div#navbar {
+	position: fixed;
+	display: inline-block;
+	right: 2%;
+}
+
+div#links {
+	position: fixed;
+	display: inline-block;
+	left: .5%;
+}
+
+div#navbar ul, div#links ul {
+	list-style-type: none;
+	padding: 0;
+	margin-top: 13%;
+}
+
+div#navbar ul li, div#links ul li {
+	text-align: center;
+	width: 100%;
+	margin: 0 0 3% 0;
+	padding: 5%;
+}
+
+li.colorButtons {
+	background-color: #001166;
+}
+
+li.colorButtons:hover {
+	background-color: #557755;
+}
+
+li.colorButtons:active {
+	background-color: #733F7F;
+}
+
+div#navbar ul li a, div#links ul li a {
+	font-family: Georgia, Times, serif;
+	font-weight: bold;
+	font-size: 1.1em;
+	text-decoration: none;
+	color: #FFFFEE;
+}
+
+div.nowrap {
+	clear: both;
+}
+
+div#main {
+	margin-top: 4%;
+}
+
+div#footer {
+	background-color: #e3e4ea;
+	border: 2px groove #733f7f;
+	color: #3d3f4c;
+	padding: 1%;
+	margin: 0 20% 0 20%;
+}
+
+/*button to popup */
+button {
+	display: block;
+	font-family: "Comic Sans MS", cursive;
+	font-size: .9em;
+	background-color: #ccddbb;
+	color: #2b2b2b;
+	margin: 2% auto 2% auto;
+}
