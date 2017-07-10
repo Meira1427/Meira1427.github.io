@@ -7,6 +7,7 @@ body {
 	color: black;
 	background-color: #9DA1B3;
 	left: 0;
+	right: 0;
 	top: 0;
 }
 
@@ -81,13 +82,13 @@ div#space {
 
 div#navbar {
 	position: fixed;
-	display: inline-block;
+	/*display: inline-block;*/
 	right: 1%;
 }
 
 div#links {
 	position: fixed;
-	display: inline-block;
+	/*display: inline-block;*/
 	left: 1%;
 }
 
@@ -100,7 +101,7 @@ div#navbar ul li, div#links ul li {
 	text-align: center;
 	margin: 0 0 3% 0;
 	padding: 3%;
-	width: 100%;
+	width: 200px;
 }
 
 li.colorButtons {
@@ -118,7 +119,7 @@ li.colorButtons:active {
 div#navbar ul li a, div#links ul li a {
 	font-family: Georgia, Times, serif;
 	font-weight: bold;
-	font-size: 1.1em;
+	font-size: .9em;
 	text-decoration: none;
 	color: #FFFFEE;
 }
@@ -128,7 +129,7 @@ div.nowrap {
 }
 
 div#main {
-
+	color: #000933;
 }
 
 div#footer {
@@ -136,24 +137,24 @@ div#footer {
 	border: 2px groove #733f7f;
 	color: #3d3f4c;
 	padding: 1%;
-	margin: 0 20% 0 20%;
+	margin: 0 5% 0 5%;
 }
 
 div#left {
-	width: 20%;
+	width: 18%;
 	left: 0;
 	margin-top: 2%;
 }
 
 div#right {
-	width: 20%;
+	width: 18%;
 	right: 0;
 	margin-top: 2%;
 }
 
 div#middle {
 	width: 60%;
-	margin: 4% 20% 0 20%;
+	margin: 4% 18% 0 18%;
 }
 
 /*button to popup */
