@@ -16,9 +16,24 @@ p {
 	text-align: justify;
 }
 
+p.code {
+	font-family: Consolas, monaco, monospace;
+	color: navy;
+	text-indent: 3em;
+}
+
+.incorrect {
+	color: firebrick;
+	text-decoration: line-through;
+}
+
 /* styling the links */
 
 a {
+	color: #112288;
+}
+
+a.biglink {
 	margin: 1em;
 	padding: 1em;
 	font-family: Verdana, Geneva, sans-serif;
@@ -26,12 +41,12 @@ a {
 	color: #112288;
 }
 
-a:visited {
+a.biglink:visited {
 	color: #733f7f;
 }
 
-a:hover {
-	font-size: 1.4em;
+a.biglink:hover {
+	font-size: 1.2em;
 	color: #557755;
 }
 
@@ -47,7 +62,7 @@ h2 {
 	font-size: 1.6em;
 }
 
-h3 {
+h3, h4 {
 	font-family: Georgia, Times, serif;
 	font-size: 1.3em;
 }
@@ -83,7 +98,7 @@ div#space {
 div#navbar {
 	position: fixed;
 	/*display: inline-block;*/
-	right: 1%;
+	right: 2%;
 }
 
 div#links {
@@ -136,8 +151,9 @@ div#footer {
 	background-color: #e3e4ea;
 	border: 2px groove #733f7f;
 	color: #3d3f4c;
-	padding: 1%;
-	margin: 0 5% 0 5%;
+	font-size: .8em;
+	padding: 0 1% 0 1%;
+	margin: 3% 5% 0 5%;
 }
 
 div#left {

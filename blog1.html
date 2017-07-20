@@ -36,7 +36,7 @@
 		<div id="navbar">
 			<ul>
 				<li class="colorButtons"><a href="index.html">Home</a></li>
-				<li class="colorButtons"><a href="blog1.html">Blog Name 1</a></li>
+				<li class="colorButtons"><a href="blog1.html">Assign vs Equals</a></li>
 				<li class="colorButtons"><a href="blog2.html">Blog Name 2</a></li>
 				<li class="colorButtons"><a href="blog3.html">Blog Name 3</a></li>
 				<li class="colorButtons"><a href="blog4.html">Blog Name 4</a></li>
@@ -47,11 +47,46 @@
 
 	<div id="middle">
 		<div id="main">
-			<h2>Hold for Blog 1</h2>
-			<p>Java siphon eu siphon whipped ristretto single origin saucer affogato cappuccino. Est, skinny 
-			doppio arabica eu shop cultivar. Latte robusta, chicory carajillo kopi-luwak, crema dark ut espresso 
-			qui latte mazagran. Skinny trifecta plunger pot brewed viennese aromatic carajillo cappuccino percolator 
-			grinder robusta lungo.</p>
+			<h2>Assign vs Equals vs .equals</h2>
+			<h4>One Equals Sign "="</h4>
+				<p>In Java, you use a single equal sign to assign a value to a variable. The value on the right is assigned 
+				to the variable on the left. For example:</p>
+				<p class="code">count = 0;</p>
+				<p>This puts the value of zero into a variable called <em>count</em>. I am assuming the variable was
+				already initialized. If not, the statement would have been:</p>
+				<p class="code">int count = 0;</p>
+				<p>Later in the program, you might see a new assignment for this variable:</p>
+				<p class="code">count = count + 1;</p>
+				<p>or</p>
+				<p class="code">count++;</p>
+				<p>a shortcut for count + 1.</p>
+				<p>In these last two cases, the program will take whatever value is currently stored in <em>count</em> and 
+				increment it by one.</p>
+			<h4>Two Equals Signs "=="</h4>
+				<p>If you want to compare two numeric or boolean values, you must use "==". Some examples:</p>
+				<p class ="code">5 == 5</p>
+				<p class="code">if (count == 10) {</p>
+				<p class="code">while (playing == true) {</p>
+				<p class="code">if (pin == 1234) {</p>
+				<p>In these cases, the program will check the condition, then continue with the block of code (not specified in 
+				example) if true. If false, it will continue to next block of code.<p>
+			<h4>.equals</h4>
+				<p>Be careful. If you want to compare two string values, you must use the .equals() method instead of "==".
+				Some examples:</p>
+				<p class="code">if (password.equals("JavaRocks")) {</p>
+				<p class="code">while (playAgain.equals("yes") || playAgain.equals("y") ) { </p>
+				<p class="code">if (userAnswer.equals(correctAnswer)) { </p>
+				<p>In all of these cases, Java is comparing the string in the variable on the left to the item within the 
+				parentheses after .equals. If they match, it will continue with the block of code (not specified in 
+				example). If they do not match, the program will move on to the next block of code. You cannot use "==" when
+				when comparing strings. For example, do not do this:</p>
+				<p class="code"><span class="incorrect">if(password == "JavaRocks") {</span></p>
+				<p>if you want your program to work as intended.</p>
+				<p>Overall, pretty easy to keep apart, as long as you don't forget and try to use "==" with strings.</p>
+		</div>
+		<div id="footer">
+			<p>To Answer Question: When would you use '=' vs '==' vs .equals? Explain what each of these does and in which
+			case you would use them.</p>
 		</div>
 	</div>
 
