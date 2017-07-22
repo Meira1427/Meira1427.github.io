@@ -20,11 +20,24 @@ p.code {
 	font-family: Consolas, monaco, monospace;
 	color: navy;
 	text-indent: 3em;
+	line-height: .8em;
 }
 
 .incorrect {
 	color: firebrick;
 	text-decoration: line-through;
+}
+
+p.oneTab {
+	text-indent: 6em;
+}
+
+p.twoTab {
+	text-indent: 9em;
+}
+
+p.threeTab {
+	text-indent: 12em;
 }
 
 /* styling the links */
@@ -181,4 +194,16 @@ button {
 	background-color: #ccddbb;
 	color: #2b2b2b;
 	margin: 2% auto 2% auto;
+}
+
+/*table */
+table {
+	width: 80%;
+  	font-size: 1.2em;
+  	text-align: left;
+  	border-collapse: collapse;
+}
+
+td {
+	width: 15%;
 }

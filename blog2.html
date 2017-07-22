@@ -37,8 +37,8 @@
 			<ul>
 				<li class="colorButtons"><a href="index.html">Home</a></li>
 				<li class="colorButtons"><a href="blog1.html">Assign vs Equals</a></li>
-				<li class="colorButtons"><a href="blog2.html">Blog Name 2</a></li>
-				<li class="colorButtons"><a href="blog3.html">Blog Name 3</a></li>
+				<li class="colorButtons"><a href="blog2.html">If Else Switch</a></li>
+				<li class="colorButtons"><a href="blog3.html">People Sing. . .</a></li>
 				<li class="colorButtons"><a href="blog4.html">Blog Name 4</a></li>
 				<li class="colorButtons"><a href="blog5.html">Blog Name 5</a></li>
 			</ul>
@@ -47,11 +47,60 @@
 
 	<div id="middle">
 		<div id="main">
-			<h2>Hold for Blog 2</h2>
-			<p>Java siphon eu siphon whipped ristretto single origin saucer affogato cappuccino. Est, skinny 
-			doppio arabica eu shop cultivar. Latte robusta, chicory carajillo kopi-luwak, crema dark ut espresso 
-			qui latte mazagran. Skinny trifecta plunger pot brewed viennese aromatic carajillo cappuccino percolator 
-			grinder robusta lungo.</p>
+			<h2>If Else Switch</h2>
+			<h4>if/else</h4>
+			<p>If you have one condition to check, an if/else would be your best choice. Example:</p>
+			<p class="code">if (answer == correctAnswer) {</p>
+			<p class="code oneTab">[some code here]</p>
+			<p class="code">}</p>
+			<p class="code">else {</p>
+			<p class="code oneTab">[some code here]</span></p>
+			<p class="code">}</p>
+			<p>You would also choose an if/else if you were testing for a range of values, and performing the same code
+			for every value in the range. Here again, you have two possible branches of code.</p>
+			<p class="code">if ((answer &gt; 0) && (answer &lt; 100)) {</p>
+			<p class="code oneTab">[some code here]</p>
+			<p class="code">}</p>
+			<p class="code">else {</p>
+			<p class="code oneTab">[some code here]</span></p>
+			<p class="code">}</p>
+			<h4>if/else if</h4>
+			<p>If you are creating some branches in your code and you are looking for a few different potential answers or several
+			ranges of answers, an <em>if/else if</em> is the most useful. An example:</p>
+			<p class="code">if (answer &lt; 0) {</p>
+			<p class="code oneTab">[some code here]</p>
+			<p class="code">}</p>
+			<p class="code">else if (answer &gt; 100) {</p>
+			<p class="code oneTab">[some code here]</span></p>
+			<p class="code">}</p>
+			<p class="code">else {</p>
+			<p class="code oneTab">[some code here]</span></p>
+			<p class="code">}</p>
+			<h4>switch</h4>
+			<p>If you have multiple possible outcomes and each answer is unique (i.e. not a range of values), 
+			the code might look cleaner with a switch statement. For example:</p>
+			<p class="code">switch(birthMonth) {</p>
+			<p class="code oneTab">case "Jan":</p>
+			<p class="code twoTab">[some code here]</p>
+			<p class="code twoTab">break;</p>
+			<p class="code oneTab">case "Feb":</p>
+			<p class="code twoTab">[some code here]</p>
+			<p class="code twoTab">break;</p>
+			<p class="code oneTab">case "Mar":</p>
+			<p class="code twoTab">[some code here]</p>
+			<p class="code twoTab">break;</p>
+			<p class="code oneTab">[etc with the rest of the months]</p>
+			<p class="code oneTab">default:</p>
+			<p class="code twoTab">[some code here]</p>
+			<p class="code">}</p>
+			<p>In this example, an if statement with eleven <em>else if</em> branches would be less useful than a switch. 
+			Each possible instance in a switch needs a <em>break</em> at the end of the code. Overall, a switch is tidy and 
+			compact when you will be choosing from one of a series of unique values. If you will be working with ranges 
+			of values or if the answer will be one of only a few choices, you will be better off with an <em>if/else if/else</em>.</p>
+		</div>
+		<div id="footer">
+			<p>To Answer Question: What is the difference between 'switch' and 'if/else'? When would you use one versus
+			the other?</p>
 		</div>
 	</div>
 

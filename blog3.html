@@ -37,8 +37,8 @@
 			<ul>
 				<li class="colorButtons"><a href="index.html">Home</a></li>
 				<li class="colorButtons"><a href="blog1.html">Assign vs Equals</a></li>
-				<li class="colorButtons"><a href="blog2.html">Blog Name 2</a></li>
-				<li class="colorButtons"><a href="blog3.html">Blog Name 3</a></li>
+				<li class="colorButtons"><a href="blog2.html">If Else Switch</a></li>
+				<li class="colorButtons"><a href="blog3.html">People Sing. . .</a></li>
 				<li class="colorButtons"><a href="blog4.html">Blog Name 4</a></li>
 				<li class="colorButtons"><a href="blog5.html">Blog Name 5</a></li>
 			</ul>
@@ -47,11 +47,77 @@
 
 	<div id="middle">
 		<div id="main">
-			<h2>Hold for Blog 3</h2>
-			<p>Java siphon eu siphon whipped ristretto single origin saucer affogato cappuccino. Est, skinny 
-			doppio arabica eu shop cultivar. Latte robusta, chicory carajillo kopi-luwak, crema dark ut espresso 
-			qui latte mazagran. Skinny trifecta plunger pot brewed viennese aromatic carajillo cappuccino percolator 
-			grinder robusta lungo.</p>
+			<h2>People Sing Very Meaningful Songs Altogether</h2>
+			<h4>Say What?</h4>
+			<p>That may be a little kumbaya for your taste, but it was the first thing that popped into my
+			head when I was trying to develop a mnemonic to remember the opening line for a java program.</p>
+				<table>
+					<tr>
+						<td>people</td>
+						<td>sing</td>
+						<td>very</td>
+						<td>meaningful</td>
+						<td>songs</td>
+						<td>altogether</td>
+					</tr>
+					<tr>
+						<td>public</td>
+						<td>static</td>
+						<td>void</td>
+						<td>main</td>
+						<td>String[]</td>
+						<td>args</td>
+					</tr>
+				</table>
+			<p>When I first started to learn java, I never thought I'd remember it. With the mnemonic, it's a piece of cake.</p>
+			<h4>public static . . . main</h4>
+			<p>Parts of the opening are a little more complicated. I know that this is the main program to run and that it must
+			be declared public and static. I presume one could also have programs (methods) which are private and dynamic, 
+			but I haven't advanced that far yet. In any case, the main program should always be public and static.</p>
+			<h4>void vs int</h4>
+			<p>The word <em>void</em> in the main program just means that it doesn't return a value. You can have other methods,
+			called by your main program, which return a value. See the following example. I like to force the user to give me an 
+			integer if an integer is expected. In this case, I want the method to return an integer. So instead of <em>public 
+			static void</em>, I will use <em>public static int</em> before the name of my method. This method takes one parameter, 
+			a String with the variable name <em>prompt</em>.</p>
+			<p class="code">public static int getCleanInt(String prompt) {</p>
+			<p class="code oneTab">Scanner scanner = new Scanner(System.in);</p>
+			<p class="code oneTab">System.out.print(prompt);</p>
+			<p class="code oneTab">while(!scanner.hasNextInt()){</p>
+			<p class="code twoTab">System.out.print("Please enter only an integer: ");</p>
+			<p class="code twoTab">scanner.next();</p>
+			<p class="code oneTab">}</p>
+			<p class="code oneTab">return scanner.nextInt();</p>
+			<p class="code">}</p>
+			<p>In the main program, I might call this method to fill a variable.</p>
+			<p class="code">int age;</p>
+			<p class="code">age = getCleanInt("Enter your age: ");</p>
+			<p>There's nothing in my method preventing the user from entering a negative number. To solve this problem, 
+			I might have another method, which calls the getCleanInt() method.</p>
+			<p class="code">public static int getReasonableAge(int num) {</p>
+			<p class="code oneTab">while( (num < 0) || (num > 130) ) {</p>
+			<p class="code twoTab">num = getCleanInt("Enter your age: ");
+			<p class="code oneTab">}</p>
+			<p class="code oneTab">return num;</p>
+			<p class="code">}</p>
+			<p>Then I would do this in main program</p>
+			<p class="code">int age;</p>
+			<p class="code">age = getReasonableAge(-1);</p>
+			<p>By calling my method with a number out of range, I start the process of getting a "reasonable" number, which, 
+			by combinging these two methods, is an integer between 0 and 130.</p>
+			<h4>Other options</h4>
+			<p>In addition to <em>void</em> and <em>int</em>, you could write methods to return a <em>String</em>, <em>double</em>, 
+			<em>float</em>, <em>boolean</em>, or even an array of any of the above.</p>
+			<p class="code">public static double[] createDoubleArray(int size) {</p>
+			<p class="code oneTab">double[] myArray = new double[size];</p>
+			<p class="code oneTab">[more code here]</p>
+			<p>The above method could be written to pull numbers out of a file or ask the user to provide numbers to build
+			the array of doubles with a total of <em>size</em> numbers in it. Later in the code, it would have to <em>
+			return</em> the variable called <em>myArray</em>.</p>
+		</div>
+		<div id="footer">
+			<p>To Answer Question: What is <em>void</em> in a method declaration? How does this differ from declaring
+			a method with a return type?</p>
 		</div>
 	</div>
 
