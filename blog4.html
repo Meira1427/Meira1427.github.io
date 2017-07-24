@@ -39,19 +39,45 @@
 				<li class="colorButtons"><a href="blog1.html">Assign vs Equals</a></li>
 				<li class="colorButtons"><a href="blog2.html">If Else Switch</a></li>
 				<li class="colorButtons"><a href="blog3.html">People Sing. . .</a></li>
-				<li class="colorButtons"><a href="blog4.html">Blog Name 4</a></li>
-				<li class="colorButtons"><a href="blog5.html">Blog Name 5</a></li>
+				<li class="colorButtons"><a href="blog4.html">Casting</a></li>
+				<li class="colorButtons"><a href="blog5.html">Import Scanner</a></li>
 			</ul>
 		</div>
 	</div>
 
 	<div id="middle">
 		<div id="main">
-			<h2>Hold for Blog 4</h2>
-			<p>Java siphon eu siphon whipped ristretto single origin saucer affogato cappuccino. Est, skinny 
-			doppio arabica eu shop cultivar. Latte robusta, chicory carajillo kopi-luwak, crema dark ut espresso 
-			qui latte mazagran. Skinny trifecta plunger pot brewed viennese aromatic carajillo cappuccino percolator 
-			grinder robusta lungo.</p>
+			<h2>Casting a Double to an Int</h2>
+			<h4>(int)</h4>
+			<p>You might have an int variable in your code. After running math on some doubles, you want the final answer
+			to be rounded down to the nearest integer. In this case, you would cast the final answer to an int this way.</p>
+			<p class="code">int anInteger;</p>
+			<p class="code">double aDouble;</p>
+			<p class="code">[some code here]</p>
+			<p class="code">anInteger = (int)aDouble</p>
+			<p>Note that if the double holds the value 3.9999, when it is cast to an integer, it will hold the value 3. 
+			Everything after the decimal point is tossed. This is called flooring a number.</p>
+			<h4>(double)</h4>
+			<p>You may want to do the opposite. Perhaps if you are dividing integers and you don't want to lose the remainder. 
+			You may cast an int to a double before doing the operation.</p>
+			<p class="code">System.out.println("3/4 = " + 3/4);</p>
+			<p class="code">System.out.println("(double)3/4 = " + (double)3/4);</p>
+			<p>The output for the above statements will be:</p>
+			<p class="code">3/4 = 0</p>
+			<p class="code">(double)3/4 = .75</p>
+			<p>It may appear that (double)3 divided by 4 is incompatable, but java will cast the other integer to a double
+			before performing the operation.</p>
+			<h4>String.valueOf()</h4>
+			<p>I was curious if I could cast an int or a double to a String. This gives an "incompatible types" error.
+			However, I leaned that you can convert an integer or double to a string using String.valueOf() in this manner:</p>
+			<p class="code">String aString;</p>
+			<p class="code">double aDouble = 36.81;</p>
+			<p class="code">aString = String.valueOf(aDouble);</p>
+			<p>aString will then have the value "36.81".</p>
+		</div>
+		<div id="footer">
+			<p>To Answer Question: What does it mean to 'cast a double to an int'? Give an example of when you would
+			do this and what is happening.</p>
 		</div>
 	</div>
 
